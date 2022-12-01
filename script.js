@@ -35,8 +35,15 @@ async function setupDumbRenderer() {
   return renderer;
 }
 
-window.submitCairo = () => {
-  alert("yay");
+window.submitCairo = async () => {
+  let cairo = document.getElementById("cairo").value;
+  let cairoResp = await fetch("//localhost:8080", {
+    method: "POST",
+    headers: {},
+    body: cairo,
+  });
+
+  console.log(cairoResp);
 };
 
 function ready(renderer) {}
