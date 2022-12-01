@@ -12,7 +12,6 @@
 
       body {
         display: flex;
-        flex-direction: column;
         justify-content: center;
 				font: 300 1rem sans-serif;
         align-items: center;
@@ -42,8 +41,7 @@
 
       .editor {
         width: 512px;
-        height: 512px;
-        margin-bottom: 2em;
+				margin-right: 1em;
       }
 
       .editor textarea {
@@ -53,14 +51,14 @@
     </style>
   </head>
   <body>
-    <h1>Creative coding with Cairo</h3>
-
-		<p>
-			Write Cairo and watch it draw stuff in the Canvas.
-		</p>
 
 		<div class="editor">
-      <p>
+			<h1>Creative coding with Cairo</h3>
+
+				<p>
+					Write Cairo and watch it draw stuff in the Canvas.
+				</p>
+				<p>
 				<button onclick="submitCairo()">Run Cairo</button>
 			</p>
       <textarea id="" cols="30" rows="10"></textarea>
